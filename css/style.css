@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Dongle&family=Jua&family=Open+Sans&display=swap');
+
+*{
+     font-family: 'Jua', sans-serif;
+}
+#clock{
+     font-family: 'Cute Font', cursive;
+}
+
+.hidden{
+     display:none;
+}
