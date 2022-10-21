@@ -41,6 +41,7 @@ li{
      height: 140px;
      background-color: rgba(255, 233, 159, 0.4);
       display: flex;
+      position: relative;
      align-items: center;
      justify-content: center;
      flex-wrap: wrap;
@@ -86,6 +87,7 @@ ul::-webkit-scrollbar-thumb{
      font-size:30px;
      border-bottom: 6px solid rgba(187, 168, 135,0.8);
      border-radius: 3px;
+     text-align: center;
 
 }
 
@@ -98,4 +100,24 @@ ul::-webkit-scrollbar-thumb{
      background-color: rgba(255, 255, 255, 0.36);
      border-radius: 10px;
      border-color: rgba(67, 255, 208, 0.5);
+}
+
+li:hover button{
+     display: inline;
+}
+
+li button{
+     display: none;
+     position: absolute;
+     top: 10px;
+     left: 44%;
+     background-color: transparent;
+     border: none;
+     font-size: 20px;
+}
+
+li span{
+     font-size: 30px;
+     margin: 0px 20px;
+     
 }
