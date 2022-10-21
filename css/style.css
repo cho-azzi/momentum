@@ -3,6 +3,8 @@
 @import url("greeting.css");
 @import url("weather.css");
 @import url("clock.css");
+@import url("music.css");
+
 
 *{
      font-family: 'Jua', sans-serif;

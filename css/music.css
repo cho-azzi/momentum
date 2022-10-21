@@ -1,0 +1,11 @@
+body > svg{
+    width:40px;
+    height: 40px;
+    position: absolute;
+    top:50px;
+    color:rgb(67, 255, 208);
+
+    /* 안쓸때는 토글로 color:gray; */
+
+    right: 50px;
+}
