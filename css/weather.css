@@ -1,0 +1,28 @@
+#weather {
+     height: 25px;
+     width:65% ;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 20px;
+     background-color: rgba(67, 255, 208, 0.5);
+     position: relative;
+     top:10px;
+}
+#weather span:first-child{
+     position: absolute;
+     left:10px;
+     display: flex;
+     align-items: center;
+
+}
+#weather svg {
+     width: 20px;
+     height: 20px;
+     color:rgba(0, 0, 0, 0.798);
+}
+
+#weather span:last-child{
+     color:rgba(0, 0, 0, 0.792);
+     font-size: 15px;
+}

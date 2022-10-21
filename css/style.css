@@ -1,17 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Jua&family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Dongle&family=Jua&family=Open+Sans&display=swap');
+@import url("greeting.css");
+@import url("weather.css");
+@import url("clock.css");
 
 *{
      font-family: 'Jua', sans-serif;
-}
-#clock{
-     font-family: 'Cute Font', cursive;
 }
 
 .hidden{
      display:none;
 }
-body{ background-color: rgb(56, 56, 56);}
+
+body{ width: 100%;
+     height:100%; 
+     margin: 0;
+     background-color: rgb(56, 56, 56);
+     display: flex;
+     flex-direction: column;
+    align-items: center;
+
+}
 img{
      position:absolute;
      width: 100%;
