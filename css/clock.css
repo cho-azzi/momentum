@@ -1,12 +1,13 @@
 .clock {
-     font-size:120px;
+     font-size:300px;
      font-family: 'Cute Font', cursive;
      font-weight: bold;
      color:white ;
      position: relative;
-     top:-26px;
+     top:-60px;
      display:inline;
      margin:0;
+     text-shadow: 2px 2px 1px black;
 }
 #clock{
      display: flex;

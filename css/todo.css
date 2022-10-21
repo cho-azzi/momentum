@@ -1,0 +1,101 @@
+#board > span {
+     font-size: 30px;
+     color: rgb(209, 186, 146);
+     margin:0px;
+     position: relative;
+     left:20px;
+     top:4px;
+     
+     text-shadow: 3px 3px 2px rgb(70, 70, 70);
+}
+#board{
+     position: absolute;
+     left:40px;
+     bottom: 100px;
+}
+ul {
+     list-style-type: none;
+     padding: 0px 10px;
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     overflow: scroll;
+/* 중요!!!!!!!!!!! */
+     margin: 0px;
+     width: 700px;
+     height :320px;
+     background-color: rgba(200, 173, 124, 0.5);
+     border: 7px solid rgba(68, 48, 13, 0.68);
+     border-radius: 20px;
+     padding:0px 10px;
+     box-sizing: border-box;
+     box-shadow: inset 2px 2px 5px 0px rgba(255, 255, 255, 0.546),
+     3px 3px 20px 1px rgb(61, 61, 61);
+
+
+}
+
+li{
+     margin: 0px 30px;
+     margin-top: 20px;
+     width: 270px;
+     height: 140px;
+     background-color: rgba(255, 233, 159, 0.4);
+      display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-wrap: wrap;
+     box-shadow: inset 3px 3px 10px 0px rgba(255, 255, 255, 0.546),
+     3px 3px 8px 1px rgba(123, 79, 21, 0.866);
+     border-top-left-radius: 50px;
+     border-top-right-radius: 50px;
+     border-bottom-left-radius: 20px;
+     border-bottom-right-radius: 20px;
+}
+
+
+/* 스크롤 디자인 */
+ul{
+     overflow-x: hidden;
+     /* 가로 스크롤 숨기기 */
+}
+
+ul::-webkit-scrollbar{
+    
+     border-radius: 10px;
+     width: 10px;
+     background-color: rgba(200, 173, 124, 0.656);
+
+}
+
+ul::-webkit-scrollbar-thumb{
+     border:2px solid rgba(192, 185, 185, 0.761);
+     border-radius: 10px;
+     background-color: rgba(125, 82, 12, 0.769);
+}
+
+#todo-form{
+     position: absolute;
+     left: 130px;
+     bottom:30px;
+}
+#todo-form input{
+     border:none;
+     padding:5px 0px;
+     width: 500px;
+     background-color: transparent;
+     font-size:30px;
+     border-bottom: 6px solid rgba(187, 168, 135,0.8);
+     border-radius: 3px;
+
+}
+
+#todo-form input::placeholder{
+     color:rgb(215, 203, 183);
+     text-align: center;
+}
+
+#todo-form input:focus{
+     background-color: rgba(255, 255, 255, 0.36);
+     border-radius: 10px;
+     border-color: rgba(67, 255, 208, 0.5);
+}
