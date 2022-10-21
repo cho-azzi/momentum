@@ -31,3 +31,7 @@ img{
      z-index: -1;
      opacity:45%;
 }
+
+input:focus{
+     outline:none;
+}

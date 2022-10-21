@@ -7,7 +7,7 @@
      border-radius: 20px;
      background-color: rgba(67, 255, 208, 0.5);
      position: relative;
-     top:10px;
+     top:5px;
 }
 #weather span:first-child{
      position: absolute;
