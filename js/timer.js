@@ -24,18 +24,14 @@ function timer(){
 if(m!=NaN&&s!=NaN)
 {
   if(m==0&&s==0){
-     minutes.value="0";
-     seconds.value="0";
-     neoguri.style.transform = "translateX(0px)";
-     line.style.width="430px";
-
-     clearInterval(startTimer);
+     stopTimer();
      movingIndex=0;
+
   }else if(s!=0){
      s--;
      seconds.value=String(s);
      neoguri.style.transform = `translateX(${movingPixel*movingIndex}px)`;
-     line.style.width=`${430-movingPixel*movingIndex}px`;
+     line.style.width=`${430-movingPixel*movingIndex*0.95}px`;
 
 
   }else if(m!=0&&s==0){
@@ -44,7 +40,7 @@ if(m!=NaN&&s!=NaN)
      seconds.value=String(s);
      minutes.value=String(m);
      neoguri.style.transform = `translateX(${movingPixel*movingIndex}px)`;
-     line.style.width=`${430-movingPixel*movingIndex}px`;
+     line.style.width=`${430-movingPixel*movingIndex*0.95}px`;
 
 
   }
@@ -62,7 +58,6 @@ function stopTimer(){
      minutes.value="0";
      seconds.value="0";
      oneByOne=0;
-
 
 }
 
@@ -82,10 +77,7 @@ if(parseInt(minutes.value)>=0&&parseInt(seconds.value)>=0){
 
 }else{
      alert("0이상의 정수를 입력해주세요!");
-     neoguri.style.transform = "translateX(0px)";
-     line.style.width="430px";
-     stopTimer();
-
+     stopTimer();  
      return;
 }
 
