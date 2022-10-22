@@ -11,7 +11,7 @@
 #board{
      position: absolute;
      top:46%;
-     right: 54%;
+     left: 5%;
 }
 ul {
      list-style-type: none;
@@ -77,7 +77,7 @@ ul::-webkit-scrollbar-thumb{
 #todo-form{
      position: absolute;
      width: 700px;
-     right: 54%;
+     left:5%;
      top:91%;
      display: flex;
      justify-content: center;
