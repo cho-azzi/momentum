@@ -5,7 +5,8 @@
      width: 630px;
      height: 200px;
     border-radius: 30px;
-     border: 6px solid rgba(126, 255, 253, 0.16);
+     border: 6px solid rgba(126, 255, 253, 0.26);
+
 }
 #timer-form{
      display: flex;
@@ -13,10 +14,10 @@
 }
 #timer-form input{
      border:none;
-     width: 40px;
-     height: 40px;
-     font-size: 30px;
-     border-radius: 20px;
+     width: 60px;
+     height: 60px;
+     font-size: 40px;
+     border-radius: 30px;
      background-color: rgba(187, 248, 239, 0.8);
     text-align: center;
     margin:0px 5px;
@@ -25,31 +26,42 @@
 }
 
 #timer-form label{
-     font-size: 30px;
+     font-size: 35px;
      color:rgb(61, 207, 158);
      text-shadow: 3px 3px 2px black;
+     margin:0 3px;
 
 
 }
-#timer-form button{
+ .button{
+     width: 100px;
+     height: 50px;
      background-color: transparent;
-     font-size: 28px;
+     font-size: 25px;
      color:rgb(61, 207, 158);
      border: 2px solid rgb(61, 207, 158);
      border-radius: 8px;
-     margin-left: 20px;
-     box-shadow: 3px 3px 2px 0px black;
+     margin-left: 10px;
+     box-shadow: 3px 3px 4px 0px black;
 
 }
-#timer-form button:hover{
+ .button:hover{
      color:pink;
      border: 2px solid pink;
+
+}
+ .button:active{
+     color:pink;
+     border: 2px solid pink;
+     box-shadow:  -1px -1px 10px 0px rgba(255, 255, 255, 0.277), inset 4px 4px 6px 0px black, inset -1px -1px 2px 0px rgba(255, 255, 255, 0.753);
+
 
 }
 #timer-info {
      display: flex;
      padding: 10px 20px;
-     justify-content: space-around;
+     justify-content: space-between;
+     align-items: center;
      margin-bottom: 5px;
 }
 #timer-info span{
@@ -57,6 +69,7 @@
      position: relative;
      color:rgb(136, 241, 206);
      top:-5px;
+     left: -10px;
      text-shadow: 3px 3px 2px black;
 
 }
@@ -75,20 +88,13 @@
 }
 #timer-line div{
      z-index: 90;
-     width: 470px;
+     width: 490px;
      height: 10px;
      transform: scaleX(1.1);
      background-color: transparent;
      border-bottom: 8px dotted rgb(171, 255, 203);
 }
 
-section{
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-}
-section span{
-     color: rgb(255, 62, 94);
-     font-size: 20px;
-     text-shadow: 1px 1px 3px black;
+#neoguri{
+     transition: all 1s linear;
 }

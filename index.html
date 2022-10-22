@@ -76,20 +76,18 @@
       <div id="timer-info">
         <span>Timer</span>
         <form id="timer-form">
-          <input required type="text" id="timer-min" />
+          <input required type="text" value="0" id="timer-min" />
           <label for="timer-min">분</label>
-          <input required type="text" id="timer-sec" />
+          <input required type="text" value="0" id="timer-sec" />
           <label for="timer-sec">초</label>
-          <button>START!</button>
         </form>
+        <button class="button" id="start">START!</button>
+        <button class="button" id="reset">RESET</button>
       </div>
       <div id="timer-line">
-        <img src="img/neoguri.png" />
+        <img id="neoguri" src="img/neoguri.png" />
         <div></div>
-        <section>
-          <img src="img/bell.png" />
-          <span>남은시간</span>
-        </section>
+        <img src="img/bell.png" />
       </div>
     </div>
     <div id="quote-balloon" class="balloon1">
