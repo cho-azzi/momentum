@@ -1,8 +1,8 @@
-//input 이 숫자이고 양수일 때만 되도록
 const timerForm=document.getElementById("timer-form");
 const start=document.getElementById("start");
 const reset=document.getElementById("reset");
 const neoguri=document.getElementById("neoguri");
+const line=document.querySelector("#timer-line div div")
 
 let movingPixel;
 let movingIndex=1;
@@ -23,8 +23,8 @@ function timer(){
      minutes.value="0";
      seconds.value="0";
      neoguri.style.transform = "translateX(0px)";
-     
-     
+     line.style.width="430px";
+
      clearInterval(startTimer);
      movingIndex=0;
   }else if(s!=0){
@@ -32,6 +32,8 @@ function timer(){
      seconds.value=String(s);
      console.log(`${movingPixel*movingIndex}`);
      neoguri.style.transform = `translateX(${movingPixel*movingIndex}px)`;
+     line.style.width=`${430-movingPixel*movingIndex}px`;
+
 
   }else if(m!=0&&s==0){
      s=59;
@@ -40,6 +42,8 @@ function timer(){
      seconds.value=String(s);
      minutes.value=String(m);
      neoguri.style.transform = `translateX(${movingPixel*movingIndex}px)`;
+     line.style.width=`${430-movingPixel*movingIndex}px`;
+
 
   }
 
@@ -50,6 +54,8 @@ function timer(){
 function stopTimer(){
      clearInterval(startTimer);
      neoguri.style.transform = "translateX(0px)";
+     line.style.width="430px";
+
 
 
 }
@@ -65,6 +71,7 @@ if(parseInt(minutes.value)>=0&&parseInt(seconds.value)>=0){
 }else{
      alert("0이상의 정수를 입력해주세요!");
      neoguri.style.transform = "translateX(0px)";
+     line.style.width="430px";
 
      return;
 }
