@@ -4,8 +4,10 @@
      border-radius: 50px;
      background-color: beige;
      position:absolute;
-     right: 200px;
-     bottom:100px;
+     /* right: 200px;
+     bottom:100px; */
+     left:58%;
+     bottom:10%;
 }
 
  .balloon2{

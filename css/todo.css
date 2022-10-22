@@ -10,8 +10,8 @@
 }
 #board{
      position: absolute;
-     left:40px;
-     bottom: 100px;
+     top:46%;
+     right: 54%;
 }
 ul {
      list-style-type: none;
@@ -76,8 +76,11 @@ ul::-webkit-scrollbar-thumb{
 
 #todo-form{
      position: absolute;
-     left: 130px;
-     bottom:30px;
+     width: 700px;
+     right: 54%;
+     top:91%;
+     display: flex;
+     justify-content: center;
 }
 #todo-form input{
      border:none;
